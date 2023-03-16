@@ -21,7 +21,6 @@ function spawnCar(hash)
                 return
             end
         end
-        print(vehiclehash)
         showNotification(GetLabelText(veh).. "~n~Spawned")
         CreateVehicle(vehiclehash, x, y, z, GetEntityHeading(PlayerPedId())+90, 1, 0)
     end)
