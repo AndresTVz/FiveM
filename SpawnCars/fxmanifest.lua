@@ -10,11 +10,7 @@ version '1.0.0'
 client_scripts {
     "@NativeUI/NativeUI.lua",
     'functions.lua',
-    'client.lua'
-}
-
-server_script {
-    'server.lua'
+    'client.lua',
 }
 
  
