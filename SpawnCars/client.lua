@@ -31,6 +31,7 @@ _menuPool:Add(mainMenu)
 
 function class(menu)
     local cars = GetAllVehicleModels()
+    local pos = 0
 
     for j, class in pairs (classList) do
         local submenu = _menuPool:AddSubMenu(menu, class)
@@ -42,6 +43,7 @@ function class(menu)
         submenu.OnItemSelect = function(sender, item, index)
             spawnCar(item.Text["_Text"])
         end    
+        pos = pos + 1
     end
 
 end
