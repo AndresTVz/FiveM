@@ -15,7 +15,7 @@ function spawnVehicle(vehicle, persistent)
 
             Citizen.Wait(_sleep)
             if waiting >= 1000 then
-                return showNotification("~r~This car does not exist.")
+                return false
             end
             waiting = waiting + 100
         end
