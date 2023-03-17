@@ -1,12 +1,3 @@
-# FiveM 
-
-
-## Public Scripts by AndresTVz
-
-
-### SpawnCar
-
-* Note: It needs the NativeUI resource to work https://github.com/FrazzIe/NativeUILua
- 
-
-* Toggle E to open NativeUI
+## FiveM Library
+* ***All the information of the functions will be found in the [wiki](https://github.com/AndresTVz/FiveM/wiki "wiki") of the repository***
+*  ***Resources will be added as work is done, These will be found in the resources folder.***
