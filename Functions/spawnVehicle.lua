@@ -1,4 +1,4 @@
-function spawnVehicle(vehicle, requiered)
+function spawnVehicle(vehicle, persistent)
 
     local player = PlayerPedId()
     local _sleep = 300
@@ -15,8 +15,7 @@ function spawnVehicle(vehicle, requiered)
 
             Citizen.Wait(_sleep)
             if waiting >= 1000 then
-                showNotification("~r~This car does not exist.")
-                return
+                return showNotification("~r~This car does not exist.")
             end
             waiting = waiting + 100
         end
@@ -32,6 +31,12 @@ function spawnVehicle(vehicle, requiered)
         showNotification(GetLabelText(vehicle).. "~n~ Spawned")
         vehicle = CreateVehicle(vehicleHash, x, y, z, GetEntityHeading(player), 1, 0)
         SetPedIntoVehicle(player, vehicle, -1)
+
+        if persistent then
+            SetEntityAsMissionEntity(vehicle, true, true)
+        end
+
+        return vehicle
 
     end)
 

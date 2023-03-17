@@ -41,7 +41,7 @@ function class(menu)
             end
         end
         submenu.OnItemSelect = function(sender, item, index)
-            spawnVehicle(item.Text["_Text"])
+            spawnVehicle(item.Text["_Text"]) -- [[https://github.com/AndresTVz/FiveM/blob/main/Functions/spawnVehicle.lua]]
         end    
         pos = pos + 1
     end
