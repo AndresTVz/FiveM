@@ -28,7 +28,7 @@ function spawnVehicle(vehicle)
             end
         end
 
-        showNotification(GetLabelText(vehicle).. "~n~ Spawned")
+        addNotification(GetLabelText(vehicle).. "~n~ Spawned")
         vehicle = CreateVehicle(vehicleHash, x, y, z, GetEntityHeading(player), 1, 0)
         SetPedIntoVehicle(player, vehicle, -1)
 
