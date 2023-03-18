@@ -6,4 +6,7 @@ description 'Spawn menu'
 version '1.0.0'
 
 -- What to run
-client_script {'client.lua'}
+client_scripts {
+    'client.lua',
+    '@NativeUI/NativeUI.lua' -- [[ https://github.com/FrazzIe/NativeUILua ]]
+}
