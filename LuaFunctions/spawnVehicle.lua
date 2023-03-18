@@ -1,4 +1,4 @@
-function spawnVehicle(vehicle, persistent)
+function spawnVehicle(vehicle)
 
     local player = PlayerPedId()
     local _sleep = 300
@@ -31,10 +31,6 @@ function spawnVehicle(vehicle, persistent)
         showNotification(GetLabelText(vehicle).. "~n~ Spawned")
         vehicle = CreateVehicle(vehicleHash, x, y, z, GetEntityHeading(player), 1, 0)
         SetPedIntoVehicle(player, vehicle, -1)
-
-        if persistent then
-            SetEntityAsMissionEntity(vehicle, true, true)
-        end
 
         return vehicle
 
