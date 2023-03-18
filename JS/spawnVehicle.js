@@ -7,4 +7,6 @@ function spawnVehicle(){
 
     console.log(x,y,z)
 
+    /* Algo */
+
 }
